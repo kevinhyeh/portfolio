@@ -1,0 +1,65 @@
+html, body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+html
+  font-size: 10px
+
+// variables
+$font-reg: 'montserratlight'
+$font-thin: 'montserratthin'
+$font-semi: 'montserratregular'
+$font-bold: 'montserratbold'
+$prim-green: #2ff772
+
+// custom fonts
+@font-face 
+  font-family: 'montserratbold'
+  src: url('../custom_fonts/montserrat-bold-webfont.woff2') format('woff2'), url('montserrat-bold-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'montserratregular'
+  src: url('../custom_fonts/montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'montserratlight'
+  src: url('../custom_fonts/montserrat-light-webfont.woff2') format('woff2'), url('montserrat-light-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'montserratthin'
+  src: url('../custom_fonts/montserrat-thin-webfont.woff2') format('woff2'), url('montserrat-thin-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+.main-container
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: auto
+
+@mixin border-line
+  &:before
+    content: ""
+    position: absolute
+    left: 0%
+    bottom: 0
+    height: .1rem
+    width: 30%
+    border-bottom: .2rem solid #fff
+
+
+@import _portfolio
+
+@import _sidebar
