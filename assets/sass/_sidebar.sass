@@ -1,9 +1,9 @@
 .sidebar
-  width: 30rem
+  width: 35rem
   height: 100vh
   position: fixed
   display: inline-block
-  background-color: #006ce2
+  background-color: $prim-blue
 
   &-image
     width: 18rem
@@ -45,16 +45,24 @@
     position: relative
     padding-bottom: 3rem
 
-    a
-      color: #fff
-      font-family: $font-semi
-      display: block
-      font-size: 1.8rem
-      margin: .7rem 0
-      text-transform: uppercase
+    dl
+      padding: 0
 
-      &:hover
-        color: $prim-green
+      dt
+        display: block
+        margin: .7rem 0
+
+      dd
+        margin-left: 1rem
+
+      a, dd
+        color: #fff
+        font-family: $font-semi
+        font-size: 1.8rem
+        text-transform: uppercase
+
+        &:hover
+          color: $prim-green
 
     @include border-line
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    Google Icons
+    <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   </head>
@@ -21,10 +21,13 @@
         </div>
         <div class="sidebar-links">
           <p class="sidebar-category">Portfolio</p>
-          <a href="#about">About</a>
-          <a href="#freelance">Freelance</a>
-          <a href="#mobile">Mobile App</a>
-          <a href="#forum">Forum</a>
+          <dl>
+            <dt><a href="#about">About</a></dt>
+            <dt><a href="#freelance">Freelance</a></dt>
+            <dt><a href="#deck">Projects</a></dt>
+            <dd>- <a href="#deck">Deck Challenge</a></dd>
+            <dd>- <a href="#forum">Forum</a></dd>
+          </dl>
         </div>
         <div class="sidebar-contact">
           <p class="sidebar-category">Contact</p>
@@ -35,14 +38,62 @@
         </div>
       </section>
       <section class="portfolio">
-        <div class="portfolio-tgj">
-          heidfdfdf
+        <div class="portfolio-about" id="about">
+          <h2>Profile</h2>
+          <div class="portfolio-about-sec">
+            <img src="assets/svg/location-24px.svg" alt="location">
+            <div class="portfolio-about-sec-info">
+              <p><span class="bold-font">Birthplace: </span>Hong Kong. May 17th, 1994. (24 years young)</p>
+              <p><span class="bold-font">Current location: </span>Foster City, California.</p>
+            </div> 
+          </div>
+          <div class="portfolio-about-sec">
+            <img src="assets/svg/face-24px.svg" alt="location">
+            <div class="portfolio-about-sec-info">
+              <p><span class="bold-font">Summary: </span>I am an innovative Front End Developer who uses his Graphic Design knowledge as an advantage. Proficient in React, HTML, CSS, and Javascript; plus modern libraries and frameworks. Able to grasp new skills quickly and efficiently. Even more so, passionate about learning the process. With a strong mind set in solving puzzles and creating new ideas, it increases my love towards being a front end developer.</p>
+              <p><span class="bold-font">Languages: </span>English (Fluent), Cantonese (Proficient).</p>
+              <p><span class="bold-font">Technologies: </span>React / React Native, HTML / Bootstrap, CSS / LESS / SASS, Javascript / jQuery, NodeJs / Express, MYSQL / MongoDB.</p>
+              <p><span class="bold-font">Programs: </span>Adobe Photoshop, Adobe, Illustrator, Adobe InDesign, Adobe Bridge, Adobe Lightroom, Sketch.</p>
+            </div>
+          </div>
+          <div class="portfolio-about-sec">
+            <img src="assets/svg/school-24px.svg" alt="location">
+            <div class="portfolio-about-sec-info">
+              <p><span class="bold-font">High School: </span>San Mateo High School. (Aug 2008 - May 2012)</p>
+              <p><span class="bold-font">College: </span>Notre Dame de Namur University. Graduated with bachelors in Graphic Design and recieved Cum Laude honors. (Aug 2012 - May 2016)</p>
+              <p><span class="bold-font">Bootcamp: </span>UC Berkeley Extension Bootcamp. Full stack course where I learned everything I know today. Projects were worked on in groups besides our final project. Received no lower than an A- as a grade for homework assignments and projects. Presented with certificate for completion at the end of course. (May 2018 - Nov 2018)</p>
+            </div>
+          </div>
         </div>
-        <div class="portfolio">
-          
+        <div class="portfolio-tgj" id="freelance">
+          <h2>The Graphic Jar</h2>
+          <img class="portfolio-tgj-logo" src="assets/svg/tgj_new_logo.svg" alt="tgj-logo">
+          <a href="https://kevinhyeh.github.io/tgj_website/" target="_blank"><div class="portfolio-tgj-img"></div></a>
+          <p>Website: <a class="portfolio-link" href="https://kevinhyeh.github.io/tgj_website/" target="_blank">
+          https://kevinhyeh.github.io/tgj_website/</a></p>
+          <p>Project Builder App: <a class="portfolio-link" href="https://tgj-project-builder-q98mnwxq6.now.sh/" target="_blank">https://tgj-project-builder-q98mnwxq6.now.sh/</a></p>
+          <p>Github: <a class="portfolio-link" href="https://github.com/kevinhyeh/tgj_website" target="_blank">https://github.com/kevinhyeh/tgj_website</a></p>
+          <p>The Graphic Jar is a graphic design freelance that a college friend, Christina Sayegh, and I started in January 2017. We specialize in designs that involve branding a business, such as logos, business cards, and websites. Christina would handle all of the illustration aspects of the freelance where I would take care of any development needed.</p>
+          <p>Technologies used for the website includes HTML, CSS / SASS, Javascript and a bit of Bootstrap. The website is mobile friendly where the use of media queries and javascript were needed to change the layout of the website and navigation bar.</p>
+          <p>Another aspect of the website includes a project builder application that I have developed using ReactJS, NodeJs, and Express; also Now for deployment (link above). This application allows users to create a simple starting point for their desired project with a bit of customization. Their project is then sent to us via email where we can start the project from there.</p>
         </div>
+        <div class="portfolio-deck" id="deck">
+          <h2>Deck Challenge</h2>
+          <div class="portfolio-deck-preview">
+            <img class="portfolio-deck-img" src="assets/images/deck1.jpeg" alt="deck1">
+            <img class="portfolio-deck-img" src="assets/images/deck2.jpeg" alt="deck2">
+            <div class="portfolio-deck-mov">
+              <video src="assets/movie/deck.mov" controls></video>
+              <p>Turn up volume</p>
+            </div>
+          </div>
+          <p>Github: <a class="portfolio-link" href="https://github.com/kevinhyeh/tgj_website" target="_blank">https://github.com/kevinhyeh/tgj_website</a></p>
+        </div>
+        <p>Portfolio Repository: <a class="portfolio-link" href="https://kevinhyeh.github.io/portfolio/." target="_blank">https://kevinhyeh.github.io/portfolio/.</a></p>
       </section>
     </div>
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- javascript file -->
     <script type="text/javascript" src="assets/js/javascript.js"></script>
   </body>

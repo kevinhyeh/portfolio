@@ -1,6 +1,105 @@
 .portfolio
-  width: 79%
+  width: auto
   display: inline-block
   vertical-align: top
-  margin-left: 30rem
+  margin-left: 35rem
+  padding: 10rem
+  height: auto
 
+  p
+    font-family: $font-reg
+    font-size: 1.8rem
+
+  h2
+    font-family: $font-bold
+    font-size: 3rem
+    margin: 0
+    text-transform: uppercase
+
+  &-link
+    font-family: $font-reg
+    font-size: 1.8rem
+    color: $prim-blue
+
+  &-about
+    margin-bottom: 5rem
+
+    &-sec
+
+      img
+        width: 5rem
+        display: inline-block
+        margin: 1rem 0 0
+
+      &-info
+        display: inline-block
+        width: 90%
+        vertical-align: top
+
+        p
+          text-align: justify
+
+  &-tgj
+    margin-bottom: 5rem
+
+    h2
+      display: inline-block
+      vertical-align: top
+      padding-top: .3rem
+
+    &-logo
+      display: inline-block
+      width: 3rem
+      margin-left: 1.5rem
+
+    &-img
+      width: 100%
+      height: 55rem
+      margin: 3rem 0 
+      border-radius: .5rem
+      background-image: url('../images/tgj_pic.png')
+      background-size: 100%
+      background-repeat: no-repeat
+      cursor: pointer
+
+      &:hover
+        background-image: url('../images/tgj_pic_hover.jpg')
+
+  &-deck
+    margin-bottom: 5rem
+
+    &-preview
+      width: 90rem 
+      display: flex
+      justify-content: space-between
+      margin: 3rem auto 
+
+    &-img, video
+      width: 25rem
+      height: 50rem
+      display: inline-block
+      border-radius: .5rem
+
+      
+
+    &-mov
+      border-radius: .5rem
+
+      p
+        text-align: center
+
+  @media screen and (min-width: 1685px)
+    &-tgj
+      &-img
+        height: 70rem
+    
+    &-deck
+      &-preview
+        width: 110rem
+
+      &-img, video
+        width: 30rem
+        height: 60rem
+
+.bold-font
+  font-family: $font-bold

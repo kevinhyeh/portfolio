@@ -45,14 +45,110 @@ html {
 }
 
 .portfolio {
-  width: 79%;
+  width: auto;
   display: inline-block;
   vertical-align: top;
-  margin-left: 30rem;
+  margin-left: 35rem;
+  padding: 10rem;
+  height: auto;
+}
+.portfolio p {
+  font-family: "montserratlight";
+  font-size: 1.8rem;
+}
+.portfolio h2 {
+  font-family: "montserratbold";
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.portfolio-link {
+  font-family: "montserratlight";
+  font-size: 1.8rem;
+  color: #006ce2;
+}
+.portfolio-about {
+  margin-bottom: 5rem;
+}
+.portfolio-about-sec img {
+  width: 5rem;
+  display: inline-block;
+  margin: 1rem 0 0;
+}
+.portfolio-about-sec-info {
+  display: inline-block;
+  width: 90%;
+  vertical-align: top;
+}
+.portfolio-about-sec-info p {
+  text-align: justify;
+}
+.portfolio-tgj {
+  margin-bottom: 5rem;
+}
+.portfolio-tgj h2 {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.3rem;
+}
+.portfolio-tgj-logo {
+  display: inline-block;
+  width: 3rem;
+  margin-left: 1.5rem;
+}
+.portfolio-tgj-img {
+  width: 100%;
+  height: 55rem;
+  margin: 3rem 0;
+  border-radius: 0.5rem;
+  background-image: url("../images/tgj_pic.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.portfolio-tgj-img:hover {
+  background-image: url("../images/tgj_pic_hover.jpg");
+}
+.portfolio-deck {
+  margin-bottom: 5rem;
+}
+.portfolio-deck-preview {
+  width: 90rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+.portfolio-deck-img, .portfolio-deck video {
+  width: 25rem;
+  height: 50rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.portfolio-deck-mov {
+  border-radius: 0.5rem;
+}
+.portfolio-deck-mov p {
+  text-align: center;
+}
+@media screen and (min-width: 1685px) {
+  .portfolio-tgj-img {
+    height: 70rem;
+  }
+  .portfolio-deck-preview {
+    width: 110rem;
+  }
+  .portfolio-deck-img, .portfolio-deck video {
+    width: 30rem;
+    height: 60rem;
+  }
+}
+
+.bold-font {
+  font-family: "montserratbold";
 }
 
 .sidebar {
-  width: 30rem;
+  width: 35rem;
   height: 100vh;
   position: fixed;
   display: inline-block;
@@ -103,15 +199,23 @@ html {
   position: relative;
   padding-bottom: 3rem;
 }
-.sidebar-links a {
+.sidebar-links dl {
+  padding: 0;
+}
+.sidebar-links dl dt {
+  display: block;
+  margin: 0.7rem 0;
+}
+.sidebar-links dl dd {
+  margin-left: 1rem;
+}
+.sidebar-links dl a, .sidebar-links dl dd {
   color: #fff;
   font-family: "montserratregular";
-  display: block;
   font-size: 1.8rem;
-  margin: 0.7rem 0;
   text-transform: uppercase;
 }
-.sidebar-links a:hover {
+.sidebar-links dl a:hover, .sidebar-links dl dd:hover {
   color: #2ff772;
 }
 .sidebar-links:before {
