@@ -16,6 +16,11 @@
     margin: 0
     text-transform: uppercase
 
+  h4
+    font-family: $font-bold
+    font-size: 3rem
+    margin-bottom: 0
+
   &-link
     font-family: $font-reg
     font-size: 1.8rem
@@ -72,21 +77,13 @@
       width: 90rem 
       display: flex
       justify-content: space-between
-      margin: 3rem auto 
+      margin: 3rem auto
 
-    &-img, video
+    &-img, &-video
       width: 25rem
-      height: 50rem
+      height: 54rem
       display: inline-block
       border-radius: .5rem
-
-      
-
-    &-mov
-      border-radius: .5rem
-
-      p
-        text-align: center
 
   @media screen and (min-width: 1685px)
     &-tgj
@@ -97,9 +94,20 @@
       &-preview
         width: 110rem
 
-      &-img, video
+      &-img, &-video
         width: 30rem
-        height: 60rem
+        height: 65rem
+
+  &-forum
+    &-img
+      width: 100%
+      border: .1rem solid #222
+      border-radius: .5rem
+      margin: 3rem 0 1.5rem
+
+  &-resume
+    margin-top: 2rem
+    width: 50rem
 
 .bold-font
   font-family: $font-bold

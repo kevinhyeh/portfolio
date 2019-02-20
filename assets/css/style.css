@@ -62,6 +62,11 @@ html {
   margin: 0;
   text-transform: uppercase;
 }
+.portfolio h4 {
+  font-family: "montserratbold";
+  font-size: 3rem;
+  margin-bottom: 0;
+}
 .portfolio-link {
   font-family: "montserratlight";
   font-size: 1.8rem;
@@ -118,17 +123,11 @@ html {
   justify-content: space-between;
   margin: 3rem auto;
 }
-.portfolio-deck-img, .portfolio-deck video {
+.portfolio-deck-img, .portfolio-deck-video {
   width: 25rem;
-  height: 50rem;
+  height: 54rem;
   display: inline-block;
   border-radius: 0.5rem;
-}
-.portfolio-deck-mov {
-  border-radius: 0.5rem;
-}
-.portfolio-deck-mov p {
-  text-align: center;
 }
 @media screen and (min-width: 1685px) {
   .portfolio-tgj-img {
@@ -137,10 +136,20 @@ html {
   .portfolio-deck-preview {
     width: 110rem;
   }
-  .portfolio-deck-img, .portfolio-deck video {
+  .portfolio-deck-img, .portfolio-deck-video {
     width: 30rem;
-    height: 60rem;
+    height: 65rem;
   }
+}
+.portfolio-forum-img {
+  width: 100%;
+  border: 0.1rem solid #222;
+  border-radius: 0.5rem;
+  margin: 3rem 0 1.5rem;
+}
+.portfolio-resume {
+  margin-top: 2rem;
+  width: 50rem;
 }
 
 .bold-font {
@@ -153,6 +162,16 @@ html {
   position: fixed;
   display: inline-block;
   background-color: #006ce2;
+}
+.sidebar-logo {
+  display: inline-block;
+}
+.sidebar-logo-github {
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+.sidebar-logo-linkedin {
+  width: 4.4rem;
 }
 .sidebar-image {
   width: 18rem;
@@ -197,25 +216,22 @@ html {
   width: 80%;
   margin: auto;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
-.sidebar-links dl {
+.sidebar-links ul {
   padding: 0;
 }
-.sidebar-links dl dt {
+.sidebar-links ul li {
   display: block;
   margin: 0.7rem 0;
 }
-.sidebar-links dl dd {
-  margin-left: 1rem;
-}
-.sidebar-links dl a, .sidebar-links dl dd {
+.sidebar-links ul a {
   color: #fff;
   font-family: "montserratregular";
   font-size: 1.8rem;
   text-transform: uppercase;
 }
-.sidebar-links dl a:hover, .sidebar-links dl dd:hover {
+.sidebar-links ul a:hover {
   color: #2ff772;
 }
 .sidebar-links:before {
