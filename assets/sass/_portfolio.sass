@@ -41,9 +41,6 @@
         width: 90%
         vertical-align: top
 
-        p
-          text-align: justify
-
   &-tgj
     margin-bottom: 5rem
 
@@ -59,22 +56,15 @@
 
     &-img
       width: 100%
-      height: 55rem
       margin: 3rem 0 
       border-radius: .5rem
-      background-image: url('../images/tgj_pic.png')
-      background-size: 100%
-      background-repeat: no-repeat
       cursor: pointer
-
-      &:hover
-        background-image: url('../images/tgj_pic_hover.jpg')
 
   &-deck
     margin-bottom: 5rem
 
     &-preview
-      width: 90rem 
+      width: 90rem
       display: flex
       justify-content: space-between
       margin: 3rem auto
@@ -85,11 +75,19 @@
       display: inline-block
       border-radius: .5rem
 
+    @media screen and (max-width: 765px)
+      &-preview
+        display: block
+        justify-content: none
+
+      &-img, &-video
+        display: block
+        margin: auto
+        width: 40vw!important
+        height: 86vw!important
+        margin-bottom: 3rem
+
   @media screen and (min-width: 1685px)
-    &-tgj
-      &-img
-        height: 70rem
-    
     &-deck
       &-preview
         width: 110rem
@@ -108,6 +106,55 @@
   &-resume
     margin-top: 2rem
     width: 50rem
+
+    @media screen and (max-width: 765px)
+      width: 50vw
+
+  @media screen and (max-width: 1485px)
+    padding: 5rem
+    width: 60vw
+    margin-left: 25rem
+
+    &-deck
+      &-preview
+        width: auto
+
+      &-img, &-video
+        width: 20rem
+        height: 43rem
+
+  @media screen and (max-width: 950px)
+    width: auto
+    margin-left: 2rem
+
+  @media screen and (max-width: 530px)
+    padding: 2rem
+    margin-left: 2rem
+
+    h2, h4
+      font-size: 2rem
+
+    p
+      font-size: 1.4rem
+
+    &-link
+      font-size: 1.4rem
+
+    &-about
+      &-sec
+        img
+          width: 3rem
+        &-info
+          width: 100%
+
+    &-tgj
+      &-logo
+        width: 2rem
+        margin-left: .5rem
+
+    &-resume
+      width: auto
+
 
 .bold-font
   font-family: $font-bold

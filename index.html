@@ -14,32 +14,40 @@
   <body>
     <div class="main-container">
       <section class="sidebar">
-        <img class="sidebar-image" src="assets/images/Kevin_pic.jpg" alt="portfolio_img">
-        <div class="sidebar-header">
-          <h1 class="sidebar-header-name">Kevin Yeh</h1>
-          <p class="sidebar-header-title">Front Developer and Graphic Designer</p>
-        </div>
-        <div class="sidebar-links">
-          <p class="sidebar-category">Portfolio</p>
-          <div class="sidebar-logo">
-            <a href="https://github.com/kevinhyeh" target="_blank"><img class="sidebar-logo-github" src="assets/svg/github-logo.svg" alt="github-logo"></a>
-            <a href="https://www.linkedin.com/in/kevin-yeh-477b6133/" target="_blank"><img class="sidebar-logo-linkedin" src="assets/images/linkedin-logo.png" alt="linkedin-logo"></a>
+        <div class="sidebar-content">
+          <img class="sidebar-image" src="assets/images/Kevin_pic.jpg" alt="portfolio_img">
+          <div class="sidebar-header">
+            <h1 class="sidebar-header-name">Kevin Yeh</h1>
+            <p class="sidebar-header-title">Front Developer and Graphic Designer</p>
           </div>
-          <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#the_graphic_jar">The Graphic Jar</a></li>
-            <li><a href="#deck_challenge">Deck Challenge</a></li>
-            <li><a href="#ucbe_forum">UCBE Forum</a></li>
-          </ul>
+          <div class="sidebar-portfolio">
+            <p class="sidebar-category">Portfolio</p>
+            <div class="sidebar-logo">
+              <a href="https://github.com/kevinhyeh" target="_blank"><img class="sidebar-logo-github" src="assets/svg/github-logo.svg" alt="github-logo"></a>
+              <a href="https://www.linkedin.com/in/kevin-yeh-477b6133/" target="_blank"><img class="sidebar-logo-linkedin" src="assets/images/linkedin-logo.png" alt="linkedin-logo"></a>
+            </div>
+            <ul>
+              <li><a class="sidebar-links" href="#profile">Profile</a></li>
+              <li><a class="sidebar-links" href="#the_graphic_jar">The Graphic Jar</a></li>
+              <li><a class="sidebar-links" href="#deck_challenge">Deck Challenge</a></li>
+              <li><a class="sidebar-links" href="#ucbe_forum">UCBE Forum</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-contact">
+            <p class="sidebar-category">Contact</p>
+            <i class="material-icons material-icons-email">email</i>
+            <p class="sidebar-contact-info">kyeh5934@gmail.com</p>
+            <i class="material-icons material-icons-phone">phone</i>
+            <p class="sidebar-contact-info">(650) 888-0390</p>
+          </div>
         </div>
-        <div class="sidebar-contact">
-          <p class="sidebar-category">Contact</p>
-          <i class="material-icons material-icons-email">email</i>
-          <p class="sidebar-contact-info">kyeh5934@gmail.com</p>
-          <i class="material-icons material-icons-phone">phone</i>
-          <p class="sidebar-contact-info">(650) 888-0390</p>
+        <div class="sidebar-arrow">
+          <div class="sidebar-arrow-content">
+            &#xbb;
+          </div>
         </div>
       </section>
+      <div class="opacity"></div>
       <section class="portfolio">
         <section class="portfolio-about" id="profile">
           <h2>Profile</h2>
@@ -71,7 +79,7 @@
         <section class="portfolio-tgj" id="the_graphic_jar">
           <h2>The Graphic Jar</h2>
           <img class="portfolio-tgj-logo" src="assets/svg/tgj_new_logo.svg" alt="tgj-logo">
-           <a href="https://kevinhyeh.github.io/tgj_website/" target="_blank"><div class="portfolio-tgj-img"></div></a>
+          <a href="https://kevinhyeh.github.io/tgj_website/" target="_blank"><img class="portfolio-tgj-img" src="assets/images/tgj_pic.png" alt="tgj_picture"></a>
           <p>Website: <a class="portfolio-link" href="https://kevinhyeh.github.io/tgj_website/" target="_blank">
           https://kevinhyeh.github.io/tgj_website/</a></p>
           <p>Project Builder App: <a class="portfolio-link" href="https://tgj-project-builder-q98mnwxq6.now.sh/" target="_blank">https://tgj-project-builder-q98mnwxq6.now.sh/</a></p>
@@ -102,7 +110,7 @@
         </section>
         <h4>Thank you for looking through my portfolio.</h4>
         <p>Portfolio Repository: <a class="portfolio-link" href="https://kevinhyeh.github.io/portfolio/." target="_blank">https://kevinhyeh.github.io/portfolio/.</a></p>
-        <a href="assets/images/resume.jpg" target="_blank"><img class="portfolio-resume" src="assets/images/resume.jpg" alt="resume"></a>
+        <a href="assets/svg/resume.svg" target="_blank"><img class="portfolio-resume" src="assets/svg/resume.svg" alt="resume"></a>
       </section>
     </div>
     <!-- jquery link -->
