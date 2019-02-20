@@ -237,11 +237,16 @@ html {
   display: inline-block;
   background-color: #006ce2;
   z-index: 100;
+  overflow: hidden;
 }
 .sidebar-content {
   height: 100%;
   display: inline-block;
-  overflow: scroll;
+  overflow-y: auto;
+  padding-right: 0;
+}
+.sidebar-content::-webkit-scrollbar {
+  display: none;
 }
 .sidebar-arrow {
   display: none;

@@ -5,11 +5,16 @@
   display: inline-block
   background-color: $prim-blue
   z-index: 100
+  overflow: hidden
 
   &-content
     height: 100%
     display: inline-block
-    overflow: scroll
+    overflow-y: auto
+    padding-right: 0
+
+    &::-webkit-scrollbar
+      display: none
 
   &-arrow
     display: none
