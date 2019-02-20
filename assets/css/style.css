@@ -367,6 +367,41 @@ html {
     display: block;
   }
 }
+@media screen and (max-width: 500px) {
+  .sidebar-img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .sidebar-category {
+    font-size: 2.6rem;
+    margin: 1rem 0;
+  }
+  .sidebar-logo-github {
+    width: 3rem;
+  }
+  .sidebar-logo-linkedin {
+    width: 4rem;
+  }
+  .sidebar-header-name {
+    font-size: 3.5rem;
+  }
+  .sidebar-header-title {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+  .sidebar-portfolio {
+    padding-bottom: 1rem;
+  }
+  .sidebar-portfolio ul a {
+    font-size: 1.4rem;
+  }
+  .sidebar-contact-info {
+    font-size: 1.4rem;
+  }
+  .sidebar .material-icons {
+    font-size: 2.6rem !important;
+  }
+}
 
 .material-icons {
   color: #fff;
