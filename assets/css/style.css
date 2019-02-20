@@ -368,9 +368,10 @@ html {
   }
 }
 @media screen and (max-width: 500px) {
-  .sidebar-img {
-    width: 12rem;
-    height: 12rem;
+  .sidebar-image {
+    width: 14rem;
+    height: 14rem;
+    border: 0.6rem solid #fff;
   }
   .sidebar-category {
     font-size: 2.6rem;
