@@ -237,6 +237,7 @@ html {
   display: inline-block;
   background-color: #006ce2;
   z-index: 100;
+  overflow: scroll;
 }
 .sidebar-content {
   display: inline-block;
