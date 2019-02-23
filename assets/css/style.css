@@ -53,10 +53,18 @@ html {
 }
 
 .sidebar-show {
-  width: 85% !important;
+  animation: animate 3s;
   -webkit-clip-path: polygon(95% 0, 95% 43%, 100% 45%, 100% 55%, 95% 57%, 95% 100%, 0 100%, 0 0) !important;
 }
 
+@keyframes animate {
+  0% {
+    width: 0% !important;
+  }
+  100% {
+    width: 85% !important;
+  }
+}
 .inline-block {
   display: inline-block !important;
 }
