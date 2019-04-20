@@ -3,75 +3,53 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+  height: 100%; }
 
 html {
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 @font-face {
   font-family: "montserratbold";
   src: url("../custom_fonts/montserrat-bold-webfont.woff2") format("woff2"), url("montserrat-bold-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: "montserratregular";
   src: url("../custom_fonts/montserrat-regular-webfont.woff2") format("woff2"), url("montserrat-regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: "montserratlight";
   src: url("../custom_fonts/montserrat-light-webfont.woff2") format("woff2"), url("montserrat-light-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: "montserratthin";
   src: url("../custom_fonts/montserrat-thin-webfont.woff2") format("woff2"), url("montserrat-thin-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-.main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
-}
-
+  font-style: normal; }
 .opacity {
   width: 100%;
   height: 100%;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-}
+  display: none; }
 
 .sidebar-show {
+  width: 85% !important;
   animation: animate 3s;
-  -webkit-clip-path: polygon(95% 0, 95% 43%, 100% 45%, 100% 55%, 95% 57%, 95% 100%, 0 100%, 0 0) !important;
-}
+  -webkit-clip-path: polygon(95% 0, 95% 43%, 100% 45%, 100% 55%, 95% 57%, 95% 100%, 0 100%, 0 0) !important; }
 
 @keyframes animate {
   0% {
-    width: 0% !important;
-  }
+    width: 0% !important; }
   100% {
-    width: 85% !important;
-  }
-}
+    width: 85% !important; } }
 .inline-block {
-  display: inline-block !important;
-}
+  display: inline-block !important; }
 
 .block {
-  display: block !important;
-}
+  display: block !important; }
 
 .portfolio {
   width: auto;
@@ -79,164 +57,123 @@ html {
   vertical-align: top;
   margin-left: 35rem;
   padding: 10rem;
-  height: auto;
-}
-.portfolio p {
-  font-family: "montserratlight";
-  font-size: 1.8rem;
-}
-.portfolio h2 {
-  font-family: "montserratbold";
-  font-size: 3rem;
-  margin: 0;
-  text-transform: uppercase;
-}
-.portfolio h4 {
-  font-family: "montserratbold";
-  font-size: 3rem;
-  margin-bottom: 0;
-}
-.portfolio-link {
-  font-family: "montserratlight";
-  font-size: 1.8rem;
-  color: #006ce2;
-}
-.portfolio-about {
-  margin-bottom: 5rem;
-}
-.portfolio-about-sec img {
-  width: 5rem;
-  display: inline-block;
-  margin: 1rem 0 0;
-}
-.portfolio-about-sec-info {
-  display: inline-block;
-  width: 90%;
-  vertical-align: top;
-}
-.portfolio-tgj {
-  margin-bottom: 5rem;
-}
-.portfolio-tgj h2 {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 0.3rem;
-}
-.portfolio-tgj-logo {
-  display: inline-block;
-  width: 3rem;
-  margin-left: 1.5rem;
-}
-.portfolio-tgj-img {
-  width: 100%;
-  margin: 3rem 0;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.portfolio-deck {
-  margin-bottom: 5rem;
-}
-.portfolio-deck-preview {
-  width: 90rem;
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem auto;
-}
-.portfolio-deck-img, .portfolio-deck-video {
-  width: 25rem;
-  height: 54rem;
-  display: inline-block;
-  border-radius: 0.5rem;
-}
-@media screen and (max-width: 765px) {
-  .portfolio-deck-preview {
-    display: block;
-    justify-content: none;
-  }
-  .portfolio-deck-img, .portfolio-deck-video {
-    display: block;
-    margin: auto;
-    width: 40vw !important;
-    height: 86vw !important;
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (min-width: 1685px) {
-  .portfolio-deck-preview {
-    width: 110rem;
-  }
-  .portfolio-deck-img, .portfolio-deck-video {
-    width: 30rem;
-    height: 65rem;
-  }
-}
-.portfolio-forum-img {
-  width: 100%;
-  border: 0.1rem solid #222;
-  border-radius: 0.5rem;
-  margin: 3rem 0 1.5rem;
-}
-.portfolio-resume {
-  margin-top: 2rem;
-  width: 50rem;
-}
-@media screen and (max-width: 765px) {
-  .portfolio-resume {
-    width: 50vw;
-  }
-}
-@media screen and (max-width: 1485px) {
-  .portfolio {
-    padding: 5rem;
-    width: 60vw;
-    margin-left: 25rem;
-  }
-  .portfolio-deck-preview {
-    width: auto;
-  }
-  .portfolio-deck-img, .portfolio-deck-video {
-    width: 20rem;
-    height: 43rem;
-  }
-}
-@media screen and (max-width: 950px) {
-  .portfolio {
-    width: auto;
-    margin-left: 2rem;
-  }
-}
-@media screen and (max-width: 530px) {
-  .portfolio {
-    padding: 2rem;
-    margin-left: 2rem;
-  }
-  .portfolio h2, .portfolio h4 {
-    font-size: 2rem;
-  }
+  height: auto; }
   .portfolio p {
-    font-size: 1.4rem;
-  }
+    font-family: "montserratlight";
+    font-size: 1.8rem; }
+  .portfolio h2 {
+    font-family: "montserratbold";
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase; }
+  .portfolio h4 {
+    font-family: "montserratbold";
+    font-size: 3rem;
+    margin-bottom: 0; }
   .portfolio-link {
-    font-size: 1.4rem;
-  }
-  .portfolio-about-sec img {
-    width: 3rem;
-  }
-  .portfolio-about-sec-info {
+    font-family: "montserratlight";
+    font-size: 1.8rem;
+    color: #006ce2; }
+  .portfolio-about {
+    margin-bottom: 5rem; }
+    .portfolio-about-sec img {
+      width: 5rem;
+      display: inline-block;
+      margin: 1rem 0 0; }
+    .portfolio-about-sec-info {
+      display: inline-block;
+      width: 90%;
+      vertical-align: top; }
+  .portfolio-tgj {
+    margin-bottom: 5rem; }
+    .portfolio-tgj h2 {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 0.3rem; }
+    .portfolio-tgj-logo {
+      display: inline-block;
+      width: 3rem;
+      margin-left: 1.5rem; }
+    .portfolio-tgj-img {
+      width: 100%;
+      margin: 3rem 0;
+      border-radius: 0.5rem;
+      cursor: pointer; }
+  .portfolio-deck {
+    margin-bottom: 5rem; }
+    .portfolio-deck-preview {
+      width: 90rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem auto; }
+    .portfolio-deck-img, .portfolio-deck-video {
+      width: 25rem;
+      height: 54rem;
+      display: inline-block;
+      border-radius: 0.5rem; }
+    @media screen and (max-width: 765px) {
+      .portfolio-deck-preview {
+        display: block;
+        justify-content: none; }
+      .portfolio-deck-img, .portfolio-deck-video {
+        display: block;
+        margin: auto;
+        width: 40vw !important;
+        height: 86vw !important;
+        margin-bottom: 3rem; } }
+  @media screen and (min-width: 1685px) {
+    .portfolio-deck-preview {
+      width: 110rem; }
+    .portfolio-deck-img, .portfolio-deck-video {
+      width: 30rem;
+      height: 65rem; } }
+  .portfolio-forum-img {
     width: 100%;
-  }
-  .portfolio-tgj-logo {
-    width: 2rem;
-    margin-left: 0.5rem;
-  }
+    border: 0.1rem solid #222;
+    border-radius: 0.5rem;
+    margin: 3rem 0 1.5rem; }
   .portfolio-resume {
-    width: auto;
-  }
-}
+    margin-top: 2rem;
+    width: 50rem; }
+    @media screen and (max-width: 765px) {
+      .portfolio-resume {
+        width: 50vw; } }
+  @media screen and (max-width: 1485px) {
+    .portfolio {
+      padding: 5rem;
+      width: 60vw;
+      margin-left: 25rem; }
+      .portfolio-deck-preview {
+        width: auto; }
+      .portfolio-deck-img, .portfolio-deck-video {
+        width: 20rem;
+        height: 43rem; } }
+  @media screen and (max-width: 950px) {
+    .portfolio {
+      width: auto;
+      margin-left: 2rem; } }
+  @media screen and (max-width: 500px) {
+    .portfolio {
+      padding: 2rem;
+      margin-left: 0rem; }
+      .portfolio h2, .portfolio h4 {
+        font-size: 2rem; }
+      .portfolio p {
+        font-size: 1.4rem; }
+      .portfolio-link {
+        font-size: 1.25rem; }
+      .portfolio-about-sec img {
+        width: 3rem; }
+      .portfolio-about-sec-info {
+        width: 100%; }
+      .portfolio-tgj-logo {
+        width: 2rem;
+        margin-left: 0.5rem; }
+      .portfolio-resume {
+        width: auto; } }
 
 .bold-font {
-  font-family: "montserratbold";
-}
+  font-family: "montserratbold"; }
 
 .sidebar {
   width: 35rem;
@@ -245,181 +182,142 @@ html {
   display: inline-block;
   background-color: #006ce2;
   z-index: 100;
-  overflow: hidden;
-}
-.sidebar-content {
-  height: 100%;
-  display: inline-block;
-  overflow-y: auto;
-  padding-right: 0;
-}
-.sidebar-content::-webkit-scrollbar {
-  display: none;
-}
-.sidebar-arrow {
-  display: none;
-  color: #fff;
-  font-size: 3rem;
-  height: 100vh;
-  position: relative;
-  cursor: pointer;
-}
-.sidebar-arrow-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.sidebar-logo {
-  display: inline-block;
-}
-.sidebar-logo-github {
-  width: 3.5rem;
-  margin-right: 2rem;
-}
-.sidebar-logo-linkedin {
-  width: 4.4rem;
-}
-.sidebar-image {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 50%;
-  margin: 3rem auto 2rem;
-  display: block;
-  border: 0.8rem solid #fff;
-}
-.sidebar-category {
-  font-size: 3rem;
-  font-family: "montserratregular";
-  margin: 2rem 0;
-  color: #2ff772;
-}
-.sidebar-header-name {
-  font-size: 4rem;
-  margin: 0;
-  font-family: "montserratbold";
-  color: #2ff772;
-  text-align: center;
-}
-.sidebar-header-title {
-  font-size: 1.8rem;
-  font-family: "montserratregular";
-  padding-bottom: 3rem;
-  position: relative;
-  margin: 1rem auto 0;
-  color: #fff;
-  width: 80%;
-}
-.sidebar-header-title:before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  height: 0.1rem;
-  width: 30%;
-  border-bottom: 0.2rem solid #fff;
-}
-.sidebar-portfolio {
-  width: 80%;
-  margin: auto;
-  position: relative;
-  padding-bottom: 2.5rem;
-}
-.sidebar-portfolio ul {
-  padding: 0;
-}
-.sidebar-portfolio ul li {
-  display: block;
-  margin: 0.7rem 0;
-}
-.sidebar-portfolio ul a {
-  color: #fff;
-  font-family: "montserratregular";
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-.sidebar-portfolio ul a:hover {
-  color: #2ff772;
-}
-.sidebar-portfolio:before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  height: 0.1rem;
-  width: 30%;
-  border-bottom: 0.2rem solid #fff;
-}
-.sidebar-contact {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 5rem;
-}
-.sidebar-contact-info {
-  color: #fff;
-  font-size: 1.8rem;
-  font-family: "montserratregular";
-  margin: 1rem 0;
-}
-@media screen and (max-width: 1485px) {
-  .sidebar {
-    width: 25rem;
-  }
-}
-@media screen and (max-width: 950px) {
-  .sidebar {
-    width: 2rem;
-    -webkit-clip-path: polygon(2rem 45%, 2rem 55%, 0 57%, 0 43%);
-  }
+  overflow: hidden; }
   .sidebar-content {
-    display: none;
-    width: 96%;
-    vertical-align: top;
-  }
+    height: 100%;
+    display: inline-block;
+    overflow-y: auto;
+    padding-right: 0; }
+    .sidebar-content::-webkit-scrollbar {
+      display: none; }
   .sidebar-arrow {
-    display: block;
-  }
-}
-@media screen and (max-width: 500px) {
+    display: none;
+    color: #fff;
+    font-size: 3rem;
+    height: 100vh;
+    position: relative;
+    cursor: pointer; }
+    .sidebar-arrow-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .sidebar-logo {
+    display: inline-block; }
+    .sidebar-logo-github {
+      width: 3.5rem;
+      margin-right: 2rem; }
+    .sidebar-logo-linkedin {
+      width: 4.4rem; }
   .sidebar-image {
-    width: 14rem;
-    height: 14rem;
-    border: 0.6rem solid #fff;
-  }
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    margin: 3rem auto 2rem;
+    display: block;
+    border: 0.8rem solid #fff; }
   .sidebar-category {
-    font-size: 2.6rem;
-    margin: 1rem 0;
-  }
-  .sidebar-logo-github {
-    width: 3rem;
-  }
-  .sidebar-logo-linkedin {
-    width: 4rem;
-  }
+    font-size: 3rem;
+    font-family: "montserratregular";
+    margin: 2rem 0;
+    color: #2ff772; }
   .sidebar-header-name {
-    font-size: 3.5rem;
-  }
+    font-size: 4rem;
+    margin: 0;
+    font-family: "montserratbold";
+    color: #2ff772;
+    text-align: center; }
   .sidebar-header-title {
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-  }
+    font-size: 1.8rem;
+    font-family: "montserratregular";
+    padding-bottom: 3rem;
+    position: relative;
+    margin: 1rem auto 0;
+    color: #fff;
+    width: 80%; }
+    .sidebar-header-title:before {
+      content: "";
+      position: absolute;
+      left: 0%;
+      bottom: 0;
+      height: 0.1rem;
+      width: 30%;
+      border-bottom: 0.2rem solid #fff; }
   .sidebar-portfolio {
-    padding-bottom: 1rem;
-  }
-  .sidebar-portfolio ul a {
-    font-size: 1.4rem;
-  }
-  .sidebar-contact-info {
-    font-size: 1.4rem;
-  }
-  .sidebar .material-icons {
-    font-size: 2.6rem !important;
-  }
-}
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 2.5rem; }
+    .sidebar-portfolio ul {
+      padding: 0; }
+      .sidebar-portfolio ul li {
+        display: block;
+        margin: 0.7rem 0; }
+      .sidebar-portfolio ul a {
+        color: #fff;
+        font-family: "montserratregular";
+        font-size: 1.8rem;
+        text-transform: uppercase; }
+        .sidebar-portfolio ul a:hover {
+          color: #2ff772; }
+    .sidebar-portfolio:before {
+      content: "";
+      position: absolute;
+      left: 0%;
+      bottom: 0;
+      height: 0.1rem;
+      width: 30%;
+      border-bottom: 0.2rem solid #fff; }
+  .sidebar-contact {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem; }
+    .sidebar-contact-info {
+      color: #fff;
+      font-size: 1.8rem;
+      font-family: "montserratregular";
+      margin: 1rem 0; }
+  @media screen and (max-width: 1485px) {
+    .sidebar {
+      width: 25rem; } }
+  @media screen and (max-width: 950px) {
+    .sidebar {
+      width: 2rem;
+      -webkit-clip-path: polygon(2rem 45%, 2rem 55%, 0 57%, 0 43%); }
+      .sidebar-content {
+        display: none;
+        width: 96%;
+        vertical-align: top; }
+      .sidebar-arrow {
+        display: block; } }
+  @media screen and (max-width: 500px) {
+    .sidebar-image {
+      width: 14rem;
+      height: 14rem;
+      border: 0.6rem solid #fff; }
+    .sidebar-category {
+      font-size: 2.6rem;
+      margin: 1rem 0; }
+    .sidebar-logo-github {
+      width: 3rem; }
+    .sidebar-logo-linkedin {
+      width: 4rem; }
+    .sidebar-header-name {
+      font-size: 3.5rem; }
+    .sidebar-header-title {
+      font-size: 1.4rem;
+      padding-bottom: 1rem; }
+    .sidebar-portfolio {
+      padding-bottom: 1rem; }
+      .sidebar-portfolio ul a {
+        font-size: 1.4rem; }
+    .sidebar-contact-info {
+      font-size: 1.4rem; }
+    .sidebar .material-icons {
+      font-size: 2.6rem !important; } }
 
 .material-icons {
   color: #fff;
-  font-size: 3rem !important;
-}
+  font-size: 3rem !important; }
 
 /*# sourceMappingURL=style.css.map */
