@@ -24,6 +24,7 @@ const openSidebar = () => {
     $('.sidebar-content').addClass('inline-block');
     $('.opacity').addClass('inline-block');
     $('.sidebar-arrow').find('.sidebar-arrow-content').html('&#xab;');
+    $('.portfolio').addClass('no-scroll');
   } else {
     $('.sidebar-arrow').removeClass('active');
     $('.sidebar-arrow').removeClass('inline-block');
@@ -31,6 +32,7 @@ const openSidebar = () => {
     $('.sidebar-content').removeClass('inline-block');
     $('.opacity').removeClass('inline-block');
     $('.sidebar-arrow').find('.sidebar-arrow-content').html('&#xbb;');
+    $('.portfolio').removeClass('no-scroll');
   }
 }
 
